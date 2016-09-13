@@ -13,6 +13,8 @@
 		FE3E76FA1D1D25B700F6535B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3E76F81D1D25B700F6535B /* Main.storyboard */; };
 		FE3E76FC1D1D25B700F6535B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE3E76FB1D1D25B700F6535B /* Assets.xcassets */; };
 		FE3E76FF1D1D25B700F6535B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE3E76FD1D1D25B700F6535B /* LaunchScreen.storyboard */; };
+		FEAB42F51D839D6300570654 /* CycleScrollTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAB42F41D839D6300570654 /* CycleScrollTextView.m */; };
+		FEAB42F81D839D7B00570654 /* ScrollLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = FEAB42F71D839D7B00570654 /* ScrollLabelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		FE3E76FB1D1D25B700F6535B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE3E76FE1D1D25B700F6535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE3E77001D1D25B700F6535B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEAB42F31D839D6300570654 /* CycleScrollTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollTextView.h; sourceTree = "<group>"; };
+		FEAB42F41D839D6300570654 /* CycleScrollTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollTextView.m; sourceTree = "<group>"; };
+		FEAB42F61D839D7B00570654 /* ScrollLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollLabelView.h; sourceTree = "<group>"; };
+		FEAB42F71D839D7B00570654 /* ScrollLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollLabelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,8 @@
 		FE3E76E31D1D25B700F6535B = {
 			isa = PBXGroup;
 			children = (
+				FEAB42F11D839D4400570654 /* CycleScrollText */,
+				FEAB42F21D839D4400570654 /* ScrollLabelView */,
 				FE3E76EE1D1D25B700F6535B /* ScrollLabel */,
 				FE3E76ED1D1D25B700F6535B /* Products */,
 			);
@@ -77,6 +85,24 @@
 				FE3E76F01D1D25B700F6535B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEAB42F11D839D4400570654 /* CycleScrollText */ = {
+			isa = PBXGroup;
+			children = (
+				FEAB42F31D839D6300570654 /* CycleScrollTextView.h */,
+				FEAB42F41D839D6300570654 /* CycleScrollTextView.m */,
+			);
+			path = CycleScrollText;
+			sourceTree = "<group>";
+		};
+		FEAB42F21D839D4400570654 /* ScrollLabelView */ = {
+			isa = PBXGroup;
+			children = (
+				FEAB42F61D839D7B00570654 /* ScrollLabelView.h */,
+				FEAB42F71D839D7B00570654 /* ScrollLabelView.m */,
+			);
+			path = ScrollLabelView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE3E76F71D1D25B700F6535B /* ViewController.m in Sources */,
+				FEAB42F81D839D7B00570654 /* ScrollLabelView.m in Sources */,
 				FE3E76F41D1D25B700F6535B /* AppDelegate.m in Sources */,
 				FE3E76F11D1D25B700F6535B /* main.m in Sources */,
+				FEAB42F51D839D6300570654 /* CycleScrollTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +328,7 @@
 				FE3E77051D1D25B700F6535B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

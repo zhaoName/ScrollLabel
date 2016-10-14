@@ -18,7 +18,9 @@
 @property (nonatomic, assign) CGFloat velocity; /**< 滚动速度 pixels/second,默认30*/
 @property (nonatomic, assign) NSTimeInterval pauseTimeIntervalBeforeScroll; /**< 每次开始滚动前暂停的间隔 默认3s*/
 
-
+/**
+ *  重新进入前台，还能滚动
+ */
 - (void)addObaserverNotification;
 
 @end

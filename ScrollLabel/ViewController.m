@@ -27,13 +27,16 @@
    
     self.textView_long.text = @"我是能滚动的长Label, 那你滚个给我看看";
     self.textView_short.text = @"我是不能滚动Label";
+    // 重新进入前台
     [self.textView_long addCycleScrollObserverNotification];
     [self.textView_short addCycleScrollObserverNotification];
     
     
     [self.view addSubview:self.labelView_short];
+    // 重新进入前台
     [self.labelView_short addObaserverNotification];
     [self.view addSubview:self.labelVIew_long];
+    // 重新进入前台
     [self.labelVIew_long addObaserverNotification];
 }
 

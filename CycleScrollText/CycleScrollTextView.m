@@ -104,7 +104,7 @@
     }
     //设置滚动Label的frame
     self.scrollLabel.frame = CGRectMake(0, 0, actulLableWidth, HEIGHT);
-    //设置滚动后才能看到的Label的frame
+    //设置滚动后才能看到的Label的frame  CGRectOffset:在原有基础上延dx、dy平移
     self.cycleLabel.frame = CGRectOffset(self.scrollLabel.frame, actulLableWidth, 0);
 }
 
